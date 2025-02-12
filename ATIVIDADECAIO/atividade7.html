@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        text-align: center;
+        color: red;
+        font-size: 100px;
+    }
+    button{
+        text-align: center;
+        margin-left: 900px;
+        margin-top: 50px;
+    }
+</style>
+<body>
+    <p id="secretText" style="display: none;">não olhe para trás</p>
+    <button onclick="document.getElementById('secretText').style.display='block'">Que isso atrás de você??</button>
+    <script>
+        function BackgroundColor() {
+    document.body.style.backgroundColor = 'black';
+}
+    </script>
+</body>
+</html>
