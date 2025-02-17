@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let start = confirm("Você quer começar a aventura?");
+
+    if (start) {
+        let path = confirm("Você encontra uma bifurcação. Você quer ir para a esquerda?");
+        
+        if (path) {
+            let cave = confirm("Você encontra uma caverna. Você quer entrar?");
+            
+            if (cave) {
+                alert("Você encontrou um tesouro! Parabéns!");
+            } else {
+                alert("Você decidiu não entrar na caverna e voltou para casa em segurança.");
+            }
+        } else {
+            let river = confirm("Você encontra um rio. Você quer atravessar?");
+            
+            if (river) {
+                alert("Você foi levado pela correnteza. Fim da aventura.");
+            } else {
+                alert("Você decidiu não atravessar o rio e voltou para casa em segurança.");
+            }
+        }
+    } else {
+        alert("Talvez na próxima vez. Fim da história.");
+    }
+        
+    </script>
+</body>
+</html>
